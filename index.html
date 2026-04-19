@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AMiT KADAM — Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">AMiT</div>
+      <div class="preloader-bar"><div class="preloader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">AMiT<span class="dot"></span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-sun" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-greeting reveal-up">👋 Hello, World!</p>
+      <h1 class="hero-title reveal-up delay-1">Hi, I'm <span class="gradient-text">Amit Kadam</span></h1>
+      <div class="hero-subtitle reveal-up delay-2">
+        <span>I'm a </span>
+        <span class="typed-text" id="typedText"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc reveal-up delay-3">Crafting beautiful, high-performance web experiences that leave a lasting impression.</p>
+      <div class="hero-btns reveal-up delay-4">
+        <a href="#contact" class="btn btn-primary">Hire Me <i class="fas fa-arrow-right"></i></a>
+        <a href="#projects" class="btn btn-outline">View Projects <i class="fas fa-eye"></i></a>
+      </div>
+      <div class="hero-stats reveal-up delay-5">
+        <div class="stat"><span class="stat-num" data-count="8">0</span><span>+</span><p>Projects Done</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-count="5">0</span><span>+</span><p>Happy Clients</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-count="1">0</span><span>+</span><p>Years Experience</p></div>
+      </div>
+    </div>
+    <div class="hero-image reveal-right delay-3">
+      <div class="hero-img-wrapper">
+        <div class="hero-img-glow"></div>
+        <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Amit&backgroundColor=0a0a1a" alt="Amit Kadam" class="profile-pic" />
+        <div class="hero-badge badge-1"><i class="fab fa-react"></i> React</div>
+        <div class="hero-badge badge-2"><i class="fab fa-python"></i> Python</div>
+        <div class="hero-badge badge-3"><i class="fas fa-database"></i> SQL</div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <p>Scroll Down</p>
+    </div>
+  </section>
+
+  <!-- Wave Divider -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z"/></svg>
+  </div>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">Who Am I</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrap" data-aos data-aos-delay="100">
+          <div class="about-img-container">
+            <img src="D:\SY IV\Nexus\Portfolio\AmitPhoto.jpg" alt="Amit Kadam" />
+            <div class="about-img-border"></div>
+          </div>
+          <div class="about-exp-card">
+            <span class="exp-num">1</span>
+            <span class="exp-label">Years of<br>Experience</span>
+          </div>
+        </div>
+        <div class="about-content" data-aos data-aos-delay="200">
+          <h3>Passionate <span class="gradient-text">Web Developer</span> from Kavathemahankal Sangli, Maharashtra</h3>
+          <p class="about-bio">I'm Amit Kadam, a dedicated web developer with a love for turning ideas into elegant digital realities. I specialize in building responsive, performant, and visually captivating web applications using modern technologies.</p>
+          <p class="about-bio">My journey in web development started with a curiosity for how websites work, and it has grown into a full-fledged passion for crafting exceptional user experiences. I believe great code is not just functional — it's art.</p>
+
+          <div class="about-info-grid">
+            <div class="info-item"><span class="info-label"><i class="fas fa-graduation-cap"></i> Education</span><span class="info-val">B.Tech in Artificial Intelligence and Data Science</span></div>
+            <div class="info-item"><span class="info-label"><i class="fas fa-map-marker-alt"></i> Location</span><span class="info-val">Ashta Sangli, Maharashtra, India</span></div>
+            <div class="info-item"><span class="info-label"><i class="fas fa-briefcase"></i> Status</span><span class="info-val">Open to Opportunities</span></div>
+            <div class="info-item"><span class="info-label"><i class="fas fa-language"></i> Languages</span><span class="info-val">English, Hindi, Marathi</span></div>
+          </div>
+
+          <div class="about-goal">
+            <i class="fas fa-rocket"></i>
+            <p>My goal is to join an innovative tech team where I can contribute meaningfully, grow continuously, and build products that make people's lives better.</p>
+          </div>
+
+          <a href="#" class="btn btn-primary" download><i class="fas fa-download"></i> Download Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wave Divider 2 -->
+  <div class="wave-divider wave-flip">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z"/></svg>
+  </div>
+
+  <!-- Skills -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card" data-aos data-aos-delay="0">
+          <div class="skill-icon html"><i class="fab fa-html5"></i></div>
+          <h4>HTML5</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+          <span class="skill-pct">92%</span>
+        </div>
+        <div class="skill-card" data-aos data-aos-delay="80">
+          <div class="skill-icon css"><i class="fab fa-css3-alt"></i></div>
+          <h4>CSS3</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+          <span class="skill-pct">88%</span>
+        </div>
+        <div class="skill-card" data-aos data-aos-delay="160">
+          <div class="skill-icon js"><i class="fab fa-js-square"></i></div>
+          <h4>JavaScript</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+          <span class="skill-pct">82%</span>
+        </div>
+        <div class="skill-card" data-aos data-aos-delay="240">
+          <div class="skill-icon react"><i class="fab fa-react"></i></div>
+          <h4>React</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          <span class="skill-pct">75%</span>
+        </div>
+        <div class="skill-card" data-aos data-aos-delay="320">
+          <div class="skill-icon python"><i class="fab fa-python"></i></div>
+          <h4>Python</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+          <span class="skill-pct">70%</span>
+        </div>
+        <div class="skill-card" data-aos data-aos-delay="400">
+          <div class="skill-icon sql"><i class="fas fa-database"></i></div>
+          <h4>SQL</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+          <span class="skill-pct">65%</span>
+        </div>
+      </div>
+
+      <div class="tools-section" data-aos>
+        <h3>Tools & Technologies</h3>
+        <div class="tools-list">
+          <span class="tool-pill"><i class="fab fa-git-alt"></i> Git</span>
+          <span class="tool-pill"><i class="fab fa-github"></i> GitHub</span>
+          <span class="tool-pill"><i class="fas fa-wind"></i> Tailwind</span>
+          <span class="tool-pill"><i class="fab fa-figma"></i> Figma</span>
+          <span class="tool-pill"><i class="fab fa-node-js"></i> Node.js</span>
+          <span class="tool-pill"><i class="fas fa-terminal"></i> VS Code</span>
+          <span class="tool-pill"><i class="fab fa-npm"></i> npm</span>
+          <span class="tool-pill"><i class="fas fa-fire"></i> Firebase</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card" data-aos data-aos-delay="0">
+          <div class="project-img">
+            <img src="https://www.qandle.com/blog/wp-content/uploads/2024/07/AI-Based-Attendance-System-scaled.jpeg" alt="AI-powered attendance system" />
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="overlay-btn outline"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+            <h3>AI-powered attendance system</h3>
+            <p>An AI-powered attendance system was developed using OpenCV and deep learning (MTCNN/FaceNet) to detect multiple faces in real-time and validate identities via Euclidean distance. The project, utilizing Python, TensorFlow/Keras, and SQL, achieved high accuracy while automating report generation to eliminate manual errors and proxy attendance.</p>
+          </div>
+        </div>
+
+        <div class="project-card featured" data-aos data-aos-delay="100">
+          <div class="project-img">
+            <img src="D:\SY IV\Nexus\Portfolio\sneha2026.png" alt="Task Manager" />
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="overlay-btn outline"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>React</span><span>Firebase</span><span>Tailwind</span></div>
+            <h3>Sneha 2K26 Event Website</h3>
+            <p>A high-energy, responsive web portal built for Sneha Events to manage college fests and campus activities. The site serves as a central hub for event discovery, student registration, and live updates.
+</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos data-aos-delay="200">
+          <div class="project-img">
+            <img src="https://repository-images.githubusercontent.com/688957850/76a0e5d1-16c6-469c-8970-8d433228a5f5" alt="Analytics Dashboard" />
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="overlay-btn outline"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>Python</span><span>SQL</span><span>Chart.js</span></div>
+            <h3>Login Page</h3>
+            <p>A secure, minimalist entry point designed with consistent branding to provide clients and collaborators easy access to private projects. It prioritizes user experience with a clean layout, mobile responsiveness, and intuitive navigation.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos data-aos-delay="300">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&q=80" alt="Portfolio" />
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="overlay-btn outline"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <h3>WeatherNow — Weather App</h3>
+            <p>A sleek weather application using OpenWeatherMap API with 7-day forecasts, location search, and animated weather icons.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos data-aos-delay="400">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&q=80" alt="AI Chat App" />
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="overlay-btn outline"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>React</span><span>Python</span><span>OpenAI</span></div>
+            <h3>ChatMind — AI Chat Interface</h3>
+            <p>An AI-powered chat application with context memory, code highlighting, markdown rendering, and conversation export.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Wave Divider 3 -->
+  <div class="wave-divider wave-alt">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,0 1080,80 1440,40 L1440,80 L0,80 Z"/></svg>
+  </div>
+
+  <!-- Contact -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-aos data-aos-delay="100">
+          <h3>Let's work <span class="gradient-text">together</span></h3>
+          <p>Have a project in mind or just want to say hello? My inbox is always open. I'll do my best to get back to you!</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div><span>Email</span><a href="mailto:amitkadam1441@gmail.com">amitkadam1441@gmail.com</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div><span>Phone</span><a href="tel:+919075768121">+91 9075768121</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div><span>Location</span><p>Kavathemahankal Sangli, Maharashtra, India</p></div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <form class="contact-form glass-card" data-aos data-aos-delay="200" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Amit Kadam" required />
+            <i class="fas fa-user form-icon"></i>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="amit@example.com" required />
+            <i class="fas fa-envelope form-icon"></i>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Project Inquiry" />
+            <i class="fas fa-tag form-icon"></i>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            <i class="fas fa-comment form-icon"></i>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">
+            <span>Send Message</span> <i class="fas fa-paper-plane"></i>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">AMiT<span class="dot">.</span></div>
+      <p class="footer-tagline">Crafting the web, one pixel at a time.</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-socials">
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p class="footer-copy">&copy; <span class="gradient-text">Amit Kadam</span>. All rights reserved. Made by AMiT</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
