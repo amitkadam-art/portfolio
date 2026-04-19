@@ -38,25 +38,6 @@ document.querySelectorAll('a, button, .skill-card, .project-card, .tool-pill').f
 });
 
 /* ---- Theme Toggle ---- */
-const themeToggle = document.getElementById('themeToggle');
-const themeIcon = document.getElementById('themeIcon');
-const html = document.documentElement;
-
-function applyTheme(theme) {
-  html.setAttribute('data-theme', theme);
-  themeIcon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-  localStorage.setItem('theme', theme);
-}
-
-const savedTheme = localStorage.getItem('theme') || 'dark';
-applyTheme(savedTheme);
-
-themeToggle.addEventListener('click', () => {
-  const current = html.getAttribute('data-theme');
-  applyTheme(current === 'dark' ? 'light' : 'dark');
-  // Redraw canvas
-  drawParticles();
-});
 
 /* ---- Navbar ---- */
 const navbar = document.getElementById('navbar');
